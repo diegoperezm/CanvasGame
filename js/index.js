@@ -92,6 +92,41 @@ function move( object ){
 	}
 }
 
+function randomChoice(){
+	return Math.round(Math.random() * 1)
+}
+
+function enemyDirection( ){
+	
+}
+
+function enemyMove(  ){
+	
+}
+
+let enemeyMovement = window.setInterval(function(){
+	endPhase()
+	for( enemey of characters.Enemies ){
+		// Enemy decides if it will move
+		let randomMove = randomChoice()
+		
+		// Enemy decides which way it will move
+		let randomDirectionX = randomChoice()
+		let randomDirectionY = randomChoice()
+		
+		// Enemy decides which direction it will move
+		let randomDirection = Math.round(Math.random * 1) ? 1 : -1
+		
+		// Carryout out actions
+		if( randomMove ){
+			if( randomDirectionX ){ enemy.X += enemy.Speed * randomDirection }
+			if( randomDirectionY ){ enemy.Y += enemy.Speed * randomDirection }
+		}
+	}
+	beginPhase()
+}, 5000)
+
+
 // Player KeyPress
 document.addEventListener("keydown", function(e){
 	endPhase()
