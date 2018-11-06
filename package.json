@@ -1,0 +1,22 @@
+{
+  "name": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon ./**/**/**/*.spec.js",
+    "build": "gulp build",
+    "prettier": "gulp prettier"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "4.0.0",
+    "gulp-prettier": "2.0.0",
+    "gulp-useref": "3.1.6",
+    "sinon": "5.0.7",
+    "tape": "4.9.1"
+  },
+  "keywords": [],
+  "description": "",
+  "dependencies": {}
+}

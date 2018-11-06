@@ -75,7 +75,7 @@ function Player( args ){
 	this.W = args.level * 10;
 	this.H = args.level * 10;
 	this.Health = 15 * args.level;
-	this.Strength = 1.5 * args.level;
+	this.Strength = 1.5 * args.level
 	this.Speed = movementBase + 10 / args.level;
 	this.Height = 10 * args.level;
 	this.Width = 10 * args.level;
